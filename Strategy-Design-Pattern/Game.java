@@ -62,20 +62,20 @@ public class Game {
         // Character
         Character given = new Character();
 
-        // Assign an aggressive combat strategy to the warrior
+        // Assign an aggressive combat strategy to given
         given.setCombatStrategy(new AggressiveStrategy());
 
-        // Player controls the warrior
+        // Player controls given
         given.attack();  
         given.defend();  
 
         // Player switches to a different character
         Character lepita = new Character();
 
-        // Assign a defensive combat strategy to the mage
+        // Assign a defensive combat strategy to lepita
         lepita.setCombatStrategy(new DefensiveStrategy());
 
-        // Player controls the mage
+        // Player controls lepita
         lepita.attack();
         lepita.defend();  
     }
